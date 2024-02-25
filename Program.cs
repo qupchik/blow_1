@@ -12,13 +12,13 @@ void array(string[] stringArray)
 }
 string[] intrestingSymbols(string[] stringArray)
 {
-    int n = 0;
+    int count = 0;
     for (int i = 0; i < stringArray.Length; i++)
     {
         if (stringArray[i].Length <= 3)
-            n++;
+            count++;
     }
-    string[] resultArray = new string[n];
+    string[] resultArray = new string[count];
     int j = 0;
     for (int i = 0; i < stringArray.Length; i++)
     {
@@ -39,7 +39,6 @@ void printArray(string[] stringArray)
     }
     Console.Write("]");
 }
-
 
 array(stringArray);
 printArray(stringArray);
