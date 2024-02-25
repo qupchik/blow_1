@@ -10,7 +10,7 @@ void array(string[] stringArray)
         stringArray[i] = Console.ReadLine();
     }
 }
-string[] threeSymbols(string[] stringArray)
+string[] intrestingSymbols(string[] stringArray)
 {
     int n = 0;
     for (int i = 0; i < stringArray.Length; i++)
@@ -40,7 +40,9 @@ void printArray(string[] stringArray)
     Console.Write("]");
 }
 
-array(stringArray);
-printArray(threeSymbols(stringArray));
 
+array(stringArray);
+printArray(stringArray);
+Console.Write(" -> ");
+printArray(intrestingSymbols(stringArray));
 
